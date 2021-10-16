@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Todo;
 use Illuminate\Http\Request;
 
 class TodosController extends Controller
@@ -9,11 +10,12 @@ class TodosController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return int
      */
     public function index()
     {
-        //
+       $todos = Todo::all();
+       return view('todos.index')->with('todos',$todos);
     }
 
     /**
