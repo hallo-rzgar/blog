@@ -5,7 +5,7 @@
         <h5 class="card-header  bg-secondary text-white">Todos</h5>
         <div class="card-body">
             <h1 class="card-title"><a class="text-decoration-none" href="todo/{{$todo->id}}" >{{$todo->text}}</a></h1>
-            <div class="btn btn-danger m-2">{{$todo->due}}</div>
+            <h5 class="btn btn-danger  btn-sm ">{{$todo->due}}</h5>
             <p class="card-body"> {{$todo->body}}</p>
          </div>
     </div>
