@@ -116,6 +116,7 @@
       <excludeFolder url="file://$MODULE_DIR$/todo/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/todo/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/todo/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/todo/vendor/laravelcollective/html" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
