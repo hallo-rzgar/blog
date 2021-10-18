@@ -38,7 +38,8 @@ class TodosController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'text'=> 'required'
+            'text'=> 'required' ,
+            'body'=>'nullable',
         ]);
         //create todo
         $todo = new Todo;
@@ -99,6 +100,10 @@ class TodosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $todo=Todo::find($id);
+        $todo->delete();
+        return redirect('/')->with('success','Todo Deleted');
+
+
     }
 }
